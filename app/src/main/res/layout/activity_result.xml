@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.Activity.Result">
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_marginTop="100dp"
+        app:cpb_background_progressbar_color="#b6bbd8"
+        app:cpb_background_progressbar_width="@dimen/_7sdp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progressbar_color="#FF7B00"
+        app:cpb_progressbar_width="10dp"
+        app:cpb_round_border="false"
+        app:cpb_progress_max="20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totalMenjawab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/0"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/circularProgressBar"
+        app:layout_constraintBottom_toBottomOf="@id/circularProgressBar"/>
+
+    <TextView
+        android:id="@+id/benar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jawaban benar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/totalMenjawab"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_score"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circularProgressBar"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="#E8015A8C">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E8015A8C">
+
+            <TextView
+                android:id="@+id/skor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skor anda"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/skor"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_dashboard"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#FF7B00"
+        android:text="Dashboard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_180sdp"
+    android:layout_height="@dimen/_180sdp"
+    android:backgroundTint="#97FF7B00"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siap?"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:textSize="@dimen/_23sdp"/>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:text="OK"
+            android:textSize="20sp"
+            android:backgroundTint="#B5FF7B00"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

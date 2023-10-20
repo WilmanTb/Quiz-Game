@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Tentang Aplikasi"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="30dp"
+    android:textSize="20sp"
+    android:textColor="@color/white"
+    android:id="@+id/title"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembuat Aplikasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:id="@+id/author"/>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:background="#90E3E3E3"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/author"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wilman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:id="@+id/namaAuthor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bahasa Pemrograman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namaAuthor"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:id="@+id/bahasaPemrograman"/>
+
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="180dp"
+        android:layout_height="1dp"
+        android:background="#90E3E3E3"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bahasaPemrograman"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi ini dibangun menggunakan bahasa pemrograman Java"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line2"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:id="@+id/java"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Database"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/java"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:id="@+id/database"/>
+
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="180dp"
+        android:layout_height="1dp"
+        android:background="#90E3E3E3"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/database"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi ini menggunakan database Firebase Online"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line3"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:id="@+id/db"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

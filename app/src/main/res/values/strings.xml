@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">QuizGame</string>
+    <string name="Login">Sudah Punya Akun ? <font color='#FF7B00'>Login</font></string>
+    <string name="Login2">Belum Punya Akun ? <font color='#FF7B00'>Register</font></string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string-array name="Kesulitan">
+        <item>Pilih kesulitan...</item>
+        <item>Mudah</item>
+        <item>Sedang</item>
+        <item>Sulita</item>
+    </string-array>
+</resources>

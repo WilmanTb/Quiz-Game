@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add_Quetions">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Tambah Pertanyaan"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_Pertanyaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Pertanyaan"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/in_Pertanyaan"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Masukkan Pertanyaan"
+            app:endIconMode="clear_text"
+            app:endIconTint="#FF0000"
+            app:helperText="Wajib diisi"
+            app:helperTextTextColor="#FF7B00"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_Pertanyaan">
+
+            <EditText
+                android:id="@+id/et_Pertanyaan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spin_kesulitan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/customspinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/in_Pertanyaan" />
+
+        <TextView
+            android:id="@+id/txt_PilihanA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Pilihan A"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spin_kesulitan" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/in_PilihanA"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Masukkan Pilihan A"
+            app:endIconMode="clear_text"
+            app:endIconTint="#FF0000"
+            app:helperText="Wajib diisi"
+            app:helperTextTextColor="#FF7B00"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_PilihanA">
+
+            <EditText
+                android:id="@+id/et_PilihanA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:textCursorDrawable="@null" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/txt_PilihanB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Pilihan B"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/in_PilihanA" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/in_PilihanB"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Masukkan Pilihan B"
+            app:endIconMode="clear_text"
+            app:endIconTint="#FF0000"
+            app:helperText="Wajib diisi"
+            app:helperTextTextColor="#FF7B00"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_PilihanB">
+
+            <EditText
+                android:id="@+id/et_PilihanB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:textCursorDrawable="@null" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/txt_PilihanC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Pilihan C"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/in_PilihanB" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/in_PilihanC"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Masukkan Pilihan C"
+            app:endIconMode="clear_text"
+            app:endIconTint="#FF0000"
+            app:helperText="Wajib diisi"
+            app:helperTextTextColor="#FF7B00"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_PilihanC">
+
+            <EditText
+                android:id="@+id/et_PilihanC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:textCursorDrawable="@null" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/txt_PilihanD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Pilihan D"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/in_PilihanC" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/in_PilihanD"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Masukkan Pilihan D"
+            app:endIconMode="clear_text"
+            app:endIconTint="#FF0000"
+            app:helperText="Wajib diisi"
+            app:helperTextTextColor="#FF7B00"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_PilihanD">
+
+            <EditText
+                android:id="@+id/et_PilihanD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/txt_jawaban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Jawaban"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/in_PilihanD" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/in_jawaban"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Masukkan Jawaban"
+            app:endIconMode="clear_text"
+            app:endIconTint="#FF0000"
+            app:helperText="Wajib diisi"
+            app:helperTextTextColor="#FF7B00"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_jawaban">
+
+            <EditText
+                android:id="@+id/et_jawaban"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/txt_penjelasan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Penjelasan"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/in_jawaban" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/in_Penjelasan"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Masukkan Penjelasan"
+            app:endIconMode="clear_text"
+            app:endIconTint="#FF0000"
+            app:helperText="Wajib diisi"
+            app:helperTextTextColor="#FF7B00"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_penjelasan">
+
+            <EditText
+                android:id="@+id/et_Penjelasan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FF7B00"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/in_Penjelasan"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

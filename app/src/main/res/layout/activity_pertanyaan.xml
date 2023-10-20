@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".User.Activity.Pertanyaan">
+
+    <ProgressBar
+        android:id="@+id/progressPertanyaan"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_4sdp"
+        android:indeterminate="false"
+        android:max="10"
+        android:maxHeight="12dp"
+        android:minHeight="12dp"
+        android:progressTint="#FF7B00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressPertanyaan">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp">
+
+
+            <TextView
+                android:id="@+id/pertanyaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:paddingBottom="30dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_jawaban_pertama"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:onClick="clickA"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pertanyaan">
+
+                <TextView
+                    android:id="@+id/tv_jawaban_pertama"
+                    android:layout_width="match_parent"
+                    android:padding="30dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/img_pertama"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_jawaban_kedua"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="clickB"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_jawaban_pertama">
+
+                <TextView
+                    android:id="@+id/tv_jawaban_kedua"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="30dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/img_kedua"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_jawaban_ketiga"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="clickC"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_jawaban_kedua">
+
+                <TextView
+                    android:id="@+id/tv_jawaban_ketiga"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="30dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/img_ketiga"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_jawaban_keempat"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="clickD"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_jawaban_ketiga">
+
+                <TextView
+                    android:id="@+id/tv_jawaban_keempat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="30dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/img_keempat"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_penjelasan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:visibility="visible"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cv_jawaban_keempat">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/penjelasan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Penjelasan"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:visibility="gone"
+                        android:id="@+id/img_penjelasan"
+                        app:layout_constraintTop_toBottomOf="@id/penjelasan"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+                    <TextView
+                        android:id="@+id/txt_penjelasan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:text="Penjelasan"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/img_penjelasan" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#FF7B00"
+                android:text="NEXT"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_penjelasan" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="PETUNJUK PERMAINAN"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/no1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif"
+        android:text="1.  Cermatilah dan pilihlah jawaban mana yang menurut anda benar."
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/no2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif"
+        android:text="2.  Anda memiliki waktu 10 detik untuk menjawab setiap pertanyaan."
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no1" />
+
+    <TextView
+        android:id="@+id/no3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif"
+        android:text="3.  Permainan ini memiliki 3 tingkat kesulitan, yaitu Mudah, Sedang dan Sulit. Anda harus memiliki 0-199 poin untuk bermain di tingkat kesulitan Mudah. Sedangkan untuk bermain di tingkat kesulitan Sedang, anda harus memiliki poin 200 dan 400 poin untuk bermain di tingkat kesulitan Sulit"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no2" />
+
+    <TextView
+        android:id="@+id/no4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif"
+        android:text="4.  Setelah anda memilih jawaban anda, maka itu tidak dapat diurungkan"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no3" />
+
+    <TextView
+        android:id="@+id/no5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif"
+        android:text="5.  Anda tidak dapat keluar dari game pada saat sedang bermain"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no4" />
+
+    <TextView
+        android:id="@+id/no6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif"
+        android:text="6. Jika jawaban anda salah sebanyak 3 kali, maka permainan akan berhenti, dan skor anda akan di hitung"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no5" />
+
+    <TextView
+        android:id="@+id/no7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif"
+        android:text="7. Anda akan mendapatkan poin atau skor berdasarkan jawaban yang benar"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no6" />
+
+    <TextView
+        android:id="@+id/no8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif"
+        android:text="8. Setiap pertanyaan bernilai 20 point jika dijawab dengan benar"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

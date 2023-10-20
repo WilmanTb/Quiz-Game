@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:elevation="5dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nama_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_info"
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/primary"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nama_user">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/star"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/star"
+                        app:layout_constraintEnd_toStartOf="@id/line"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="Point"
+                        android:textColor="#CEFFFFFF"
+                        android:textSize="17sp"
+                        app:layout_constraintEnd_toStartOf="@id/line"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/star" />
+
+                    <TextView
+                        android:id="@+id/txt_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="23sp"
+                        app:layout_constraintEnd_toStartOf="@id/line"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/point" />
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="1dp"
+                        android:layout_height="100dp"
+                        android:background="#90E3E3E3"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/score"
+                        app:layout_constraintStart_toEndOf="@id/point"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_high"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/highscore"
+                        app:layout_constraintEnd_toStartOf="@id/line2"
+                        app:layout_constraintStart_toEndOf="@+id/line"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Skor Tertinggi"
+                        android:textColor="#CEFFFFFF"
+                        android:textSize="17sp"
+                        app:layout_constraintEnd_toStartOf="@id/line2"
+                        app:layout_constraintStart_toEndOf="@id/line"
+                        app:layout_constraintTop_toBottomOf="@id/img_high" />
+
+                    <TextView
+                        android:id="@+id/txt_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="23sp"
+                        app:layout_constraintEnd_toStartOf="@id/line2"
+                        app:layout_constraintStart_toEndOf="@id/line"
+                        app:layout_constraintTop_toBottomOf="@id/score" />
+
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_width="1dp"
+                        android:layout_height="100dp"
+                        android:background="#90E3E3E3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/bermain"
+                        app:layout_constraintStart_toEndOf="@id/score"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_game"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/game"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/line2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/bermain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Bermain"
+                        android:textColor="#CEFFFFFF"
+                        android:textSize="17sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/line2"
+                        app:layout_constraintTop_toBottomOf="@id/img_game" />
+
+                    <TextView
+                        android:id="@+id/txt_bermain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="23sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/line2"
+                        app:layout_constraintTop_toBottomOf="@id/bermain" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/ayoBermain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/cv_info"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="30dp"
+                android:text="Ayo Bermain !"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-medium"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_mudah"
+                android:layout_width="140dp"
+                android:layout_height="85dp"
+                app:layout_constraintTop_toBottomOf="@id/ayoBermain"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/cv_sedang"
+                app:cardBackgroundColor="@color/primary"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mudah"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_sedang"
+                android:layout_width="140dp"
+                android:layout_height="85dp"
+                app:layout_constraintTop_toBottomOf="@id/ayoBermain"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cv_mudah"
+                app:cardBackgroundColor="@color/primary"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sedang"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_sulit"
+                android:layout_width="140dp"
+                android:layout_height="85dp"
+                app:layout_constraintTop_toBottomOf="@id/cv_mudah"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:cardBackgroundColor="@color/primary"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sulit"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_bermain"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:backgroundTint="#FF7B00"
+                app:layout_constraintTop_toBottomOf="@+id/cv_sulit"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Bermain"
+                android:textSize="20sp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

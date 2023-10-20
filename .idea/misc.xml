@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/drawable-v24/ic_home.xml" value="0.225" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.225" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/drawable/customspinner.xml" value="0.225" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/drawable/empty_bac.xml" value="0.225" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/drawable/ic_back.xml" value="0.225" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/drawable/ic_down.xml" value="0.225" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/activity_add_quetions.xml" value="0.25" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/activity_daftar.xml" value="0.33" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/activity_dashboard.xml" value="0.3411458333333333" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/activity_dashboard_user.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/activity_dashboard_user2.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/activity_kepercayaan.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/activity_pakaian_adat.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/activity_pertanyaan.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/activity_result.xml" value="0.25" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/activity_rumah_adat.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/activity_senjata_perang.xml" value="0.2799145299145299" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/activity_tambah_foto.xml" value="0.2799145299145299" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/fragment_dashboard_user.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/fragment_info.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/fragment_materi.xml" value="0.2914529914529915" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/fragment_peringkat.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/fragment_petunjuk_permainan.xml" value="0.25" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/fragment_tentang_aplikasi.xml" value="0.1" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/list_leaderboard.xml" value="0.2914529914529915" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/nav_header.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/ready.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/layout/time_out.xml" value="0.2905982905982906" />
+        <entry key="..\:/Users/Kiki Tb/AndroidStudioProjects/QuizGame/app/src/main/res/menu/drawer_menu.xml" value="0.35520833333333335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

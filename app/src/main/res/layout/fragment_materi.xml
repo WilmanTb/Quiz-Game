@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Materi Untuk Pertanyaan"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:id="@+id/title"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cv_RumahAdat">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rumah Adat"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_RumahAdat"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cv_SenjataPerang">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senjata Perang"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_SenjataPerang"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cv_PakaianAdat">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pakaian Adat"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_PakaianAdat"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cv_kepercayaan">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kepercayaan"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#015A8C"
+    tools:context=".LandingPage.Login">
+
+    <ImageView
+        android:id="@+id/arrow_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_login"
+        android:layout_width="220dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Masuk ke Akun Anda"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_login" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:text="Email"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_daftar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/in_Email"
+        style="@style/MyTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Masukkan Email"
+        app:endIconMode="clear_text"
+        app:endIconTint="#fff"
+        app:helperText="Wajib diisi"
+        app:helperTextTextColor="#FF7B00"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_email">
+
+        <EditText
+            android:id="@+id/et_Email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Password"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/in_Email" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/in_Password"
+        style="@style/MyTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Masukkan Password"
+        app:counterMaxLength="12"
+        app:counterTextColor="@color/white"
+        app:endIconMode="password_toggle"
+        app:endIconTint="#fff"
+        app:helperText="Wajib diisi"
+        app:helperTextTextColor="#FF7B00"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_password">
+
+        <EditText
+            android:id="@+id/et_Password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FF7B00"
+        android:fontFamily="sans-serif"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/in_Password" />
+
+    <TextView
+        android:id="@+id/txt_belumPunyaAkun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/Login2"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
